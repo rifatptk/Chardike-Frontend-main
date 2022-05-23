@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import styles from "./categories.module.css";
 import { FaWarehouse, FaFilter } from "react-icons/fa";
 import { AiFillCheckSquare } from "react-icons/ai";
-import { BiRightArrow } from "react-icons/bi";
-import { BiLeftArrow } from "react-icons/bi";
+import { IoIosArrowBack } from "react-icons/io";
+import { IoIosArrowForward } from "react-icons/io";
 import Box from "@mui/material/Box";
 import Rating from "@mui/material/Rating";
 import { Col, Nav, Row, Tab, Tabs } from "react-bootstrap";
@@ -707,7 +707,9 @@ const Categories = () => {
           <div className="col-md-9 ">
             <Tab.Container id="left-tabs-example" defaultActiveKey="popular">
               <Row>
-                <Nav variant="pills" className="mb-3 ms-0 p-2">
+                <Nav variant="pills" style={{background:"#eee"}} className="mb-3 ms-0 p-3 align-items-center ">
+                  
+                  <Nav.Item className="me-2 text-secondary">Sort by</Nav.Item>
                   <Nav.Item>
                     <Nav.Link className={styles.tablink} eventKey="popular">
                       Popular
@@ -725,7 +727,8 @@ const Categories = () => {
                   </Nav.Item>
                   <Nav.Item>
                     <select
-                      className="form-select"
+                    style={{borderRadius:'2px'}}
+                      className="form-select py-1"
                       aria-label="Default select example"
                     >
                       <option selected>Price</option>
@@ -735,11 +738,11 @@ const Categories = () => {
                   </Nav.Item>
                   <Nav.Item className="ms-auto">
                   <span className="text-secondary">1/20</span>
-                    <div className="btn btn-sm btn-outline-secondary mx-2">
-                      <BiLeftArrow />
+                    <div style={{borderColor: '#ccc'}}  className="btn btn-sm btn-outline-secondary mx-1">
+                      <IoIosArrowBack />
                     </div>
-                    <div className="btn btn-sm btn-outline-danger">
-                      <BiRightArrow />
+                    <div style={{borderColor: '#ccc'}} className="btn btn-sm btn-outline-secondary">
+                      <IoIosArrowForward />
                     </div>
                   </Nav.Item>
                 </Nav>
