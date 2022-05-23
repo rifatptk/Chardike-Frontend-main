@@ -1,0 +1,25 @@
+.first{
+    transition: var(--transition);
+}
+.first h6{
+    color: var(--text-color-2);
+    margin-top: 5px;
+}
+.first p{
+    color: var(--text-color);
+    font-weight: var(--medium-font-weight);
+    font-size: var(--secondary-font-size);
+    line-height: 10px;
+}
+.first span{
+    color:var(--price-color);
+}
+.textarea{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.first:hover{
+    transform: scale(1.1);
+}

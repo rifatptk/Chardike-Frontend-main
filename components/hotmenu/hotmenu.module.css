@@ -1,0 +1,22 @@
+.item img{
+    width: 50px;
+    height: 50px;
+}
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px 10px 0px;
+    font-size: 12px;
+
+}
+.itemp{
+    font-size: var(--primary-font-size);
+    color: #222222 ;
+    font-weight: var(--product-weight);
+    margin-top: 5px;
+}
+.item:hover{
+    transform: scale(1.1);
+}

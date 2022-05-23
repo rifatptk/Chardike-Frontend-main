@@ -1,0 +1,17 @@
+ 
+.TopProduct img{
+    width: 100%;
+  
+}
+.bgarea p{
+    background-color: var(--text-color);
+    color: var(--primary-color);
+    text-align: center;
+    font-size: var(--primary-font-size);
+}
+.TopProduct h4{
+    font-size: var(--secondary-font-size);
+    color: var(--text-color);
+    font-weight: var(--medium-font-weight);
+    text-align: center;
+}

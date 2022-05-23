@@ -1,0 +1,162 @@
+
+.sproduct{
+    position: relative;
+}
+
+.productcard{
+    width: 180px;
+    background-color: #fff;
+    padding: 0;
+}
+.imgBox{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+.imgBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 2s;
+    transform-origin: right;
+}
+.productcard:hover .imgBox img{
+    transform: scale(1.2);
+}
+.content{
+    padding: 10px;
+}
+.content h3{
+    font-size: var(--primary-font-size);
+    font-weight: 500;
+    color: var(--text-color);
+    margin: 5px 0px;
+}
+.last p{
+    font-size: var(--primary-font-size);
+    color: var(--price-color);
+    font-weight: bold;
+}
+.action{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.productcard li{
+    position: relative;
+    list-style: none;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+    transform: translateX(270px);
+    color: var(--price-color);
+}
+.productcard:hover .action li{
+    transform: translateX(0px);
+
+}
+.productcard:hover .action .fa-cart-shopping:hover{
+    color: var(--primary-color);
+}
+
+.productcard span{
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    padding: 5px 6px;
+    background-color: var(--primary-color);
+    color: var(--price-color);
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 5px;
+    pointer-events: none;
+    opacity: 0;
+    transition: 2s;
+}
+.productcard li:hover span{
+    opacity: 1;
+}
+.productcard li:hover{
+    background-color: var(--price-color);
+    color: var(--primary-color);
+}
+.productcard a{
+    color: var(--price-color);
+}
+
+.productcard:hover .findsimilar{
+    height: 25px;
+}
+.content del {
+    color: var(--text-color);
+}
+.findsimilar{
+    position: absolute;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+    background-color: var(--price-color);
+    color: #262626;
+    bottom: 0px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.findsimilar a{
+   
+    color: #fff;
+    font-size: var(--primary-font-size);
+    font-weight: var(--medium-font-weight);
+
+}
+.productcard:hover{
+    border: 1px solid var(--price-color);
+}
+
+.container{
+    background-color: var(--primary-color);
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+
+.learn-more{
+    display: block;
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.learn-more a{
+    
+    padding: 10px 20px;
+    color: var(--primary-color);
+    background-color: var(--price-color);
+
+}
+.learn-more a:hover{
+    border: 1px solid var(--price-color);
+    background-color: var(--primary-color);
+    color: var(--price-color);
+}
+.learn-more .extra-btn{
+    background-color: var(--price-color);
+    color: var(--primary-color);
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+}

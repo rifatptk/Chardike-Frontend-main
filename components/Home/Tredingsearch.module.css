@@ -1,0 +1,26 @@
+.first img{
+    width: 100px;
+    height: 100px;
+}
+.text{
+    align-items: center;
+    justify-content: center;
+}
+.first{
+    margin: 0px 20px;
+}
+.mytext{
+    margin-right: 10px;
+}
+.mytext h6{
+    color: var(--text-color-2);
+}
+.first .mytext p{
+    color: var(--text-color);
+    font-size: var(--primary-font-size);
+}
+.treadingsection{
+    border-top: 1px solid #ddd;
+    padding: 10px 0px;
+}
+

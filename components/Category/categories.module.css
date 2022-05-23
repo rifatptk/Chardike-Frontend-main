@@ -1,0 +1,105 @@
+/*=========================
+    ALL CATAGORIES
+==========================*/
+.allCatagories {
+  margin-top: 20px;
+}
+.allCategoriesList {
+  margin-left: 20px;
+  color: black;
+}
+.allCategoriesList li a {
+  color: #555;
+
+  font-size: 14px;
+}
+
+/*=========================
+    CATAGORIES LEFT
+==========================*/
+.btnTomato {
+  background-color: tomato;
+  color: white;
+}
+.left {
+  padding: 5px 10px;
+}
+.header h6 {
+  color: #555;
+}
+.heading {
+  color: #555;
+  font-weight: 500;
+}
+.formCheck {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+.formCheckLabel {
+  margin: 0;
+  font-size: 14px;
+}
+.formCheckLabel a {
+  color: #555;
+}
+
+.left .content-area {
+  padding: 10px 0px;
+  border-bottom: 1px solid #ddd;
+}
+.left .content-area:last-child {
+  border-bottom: none;
+}
+.left .content-area .form-check {
+  padding-left: 0;
+  margin: 5px 0px;
+}
+
+.products {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.product {
+  width: 200px;
+  border: 1px solid lightgray;
+  transition: all 0.2s ease;
+  position: relative;
+}
+.tip {
+  z-index: 1;
+  position: relative;
+  top: 5px;
+  left: -5px;
+  padding: 2px 7px;
+}
+.tip::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: -0.1875rem;
+  border-top: 0.1875rem solid;
+  border-left: 0.1875rem solid transparent;
+  filter: brightness(60%);
+}
+.product:hover {
+  transform: scale(1.02);
+  /* box-shadow: 0 0 15px gray; */
+}
+.tablink {
+  cursor: pointer;
+  color: #555;
+}
+.tablink:hover {
+  color: #222;
+}
+
+.productDesc {
+  background-color: #eee;
+}

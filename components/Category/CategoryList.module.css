@@ -1,0 +1,16 @@
+.cartitem{
+    width: 108px;
+    border: 1px solid rgb(246, 240, 240);
+}
+.cartitem img {
+width:100%;
+}
+.cartitem:hover {
+    border: 1px solid #ddd;
+}
+.cartitem p{
+    color: #222222;
+    font-size: var(--primary-font-size);
+    font-weight: var(--medium-font-weight);
+    text-align: center;
+}
