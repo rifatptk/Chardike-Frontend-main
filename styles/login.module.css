@@ -1,0 +1,71 @@
+.login {
+ 
+  margin-top: 80px;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(https://www.publicdomainpictures.net/pictures/130000/velka/orange-circular-background-1440455814WBR.jpg);
+  /* background: linear-gradient(tomato,orangered); */
+  color: #555;
+}
+.right{
+    padding: 100px;
+    font-size: 14px;
+    /* border-radius: 5px; */
+}
+.input {
+  margin: 1rem 0;
+  font-size: 14px;
+  color: gray;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+
+}
+.btn {
+  width: 100%;
+  background-color: tomato;
+  color: white;
+  border: none;
+  padding: 10px 0;
+  border-radius: 3px;
+}
+.line{
+    margin-top: 10px;
+    height: 1px;
+    width: 150px;
+    background-color: lightgray;
+}
+.brands{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 20px;
+
+    
+}
+.brands div{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.brands div:nth-child(1){
+    background-color: #2374e1;
+}
+.brands div:nth-child(2){
+    background-color: #E94236;
+}
+.brands div:nth-child(3){
+    background-color: gray;
+}
+.terms{
+    color: gray;
+    margin-top: 16px;
+    font-size: 12px;
+    text-align: center;
+}
+.terms span{
+    color: tomato;
+}

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 const HeaderTop = () => {
   return (
@@ -46,8 +47,8 @@ const HeaderTop = () => {
                                 </div>
                                
                             </li>
-                            <li><a className="my-border" href="signup.html">Sign Up</a></li>
-                            <li><a href="login.html">Login</a></li>
+                            <li><Link className="my-border" href="/signup">Sign Up</Link></li>
+                            <li><Link href="/login">Login</Link></li>
                         </ul>
                     </div>
                 </div>
