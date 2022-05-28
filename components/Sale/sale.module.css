@@ -1,0 +1,52 @@
+.products {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.product {
+  border: 1px solid lightgray;
+  transition: all 0.2s ease;
+  position: relative;
+}
+.tip {
+  width: 50px;
+  border-radius: 0 0 25px 25px;
+  text-align: center;
+  z-index: 1;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  padding: 2px 7px;
+}
+
+.product:hover {
+  transform: scale(1.02);
+  /* box-shadow: 0 0 15px gray; */
+}
+.tablink {
+  cursor: pointer;
+  color: #555;
+  border-radius: 2px !important;
+  font-size: 14px;
+  /* padding:  5px 10px; */
+}
+.tablink:hover {
+  color: #222;
+}
+
+.productDesc {
+  background-color: #eee;
+}
+.progress {
+  background-color: rgb(235, 173, 162);
+}
+.progressbar {
+  background-color: tomato;
+}
+.btnTomato {
+  background-color: tomato;
+  color: white;
+}

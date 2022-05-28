@@ -27,8 +27,6 @@ const renderer = ({ hours, minutes, seconds, completed }) => {
 };
 
 const flashDeals = () => {
-  const timeClickHandler = (index) => {};
-
   return (
     <div className={`container ${styles.flashDeals}`}>
       <div className="">
@@ -39,15 +37,16 @@ const flashDeals = () => {
           <Countdown date={Date.now() + 1000000000} renderer={renderer} />
         </p>
       </div>
-      <div className={styles.banner}></div>
-      {/* <div className={styles.times}>
-        {times.map((time, index) => (
-          <div onClick={()=>timeClickHandler(index)} key={index} className={`text-center bg-secondary text-light`}>
-            <h3>{time.time}</h3>
-            <p>{time.ongoing ? "Ongoing":"Coming soon"}</p>
-          </div>
-        ))}
-      </div> */}
+      <div
+        className={`${styles.banner} p-5 text-light d-flex align-items-center`}
+      >
+        <h1 className="w-25 text-center">Chardike Flash Deal</h1>
+        <div className="w-75 text-center">
+          <h2>Grab your dreams like never before</h2>
+          <button className="btn btn-warning">Shop now</button>
+        </div>
+      </div>
+
       <Tabs>
         <TabList className={styles.tablist}>
           <Tab className={styles.tab}>
