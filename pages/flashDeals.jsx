@@ -19,7 +19,7 @@ const renderer = ({ hours, minutes, seconds, completed }) => {
     return (
       <span className="">
         <span className="bg-dark text-light rounded p-1">{hours}</span>:
-        <span className="bg-dark text-light rounded p-1">{minutes}:</span>:
+        <span className="bg-dark text-light rounded p-1">{minutes}</span>:
         <span className="bg-dark text-light rounded p-1">{seconds}</span>
       </span>
     );
@@ -54,19 +54,19 @@ const flashDeals = () => {
             <p>Ongoing</p>
           </Tab>
           <Tab className={styles.tab}>
-            <p>12:00</p>
+            <p>14:00</p>
             <p>Coming soon</p>
           </Tab>
           <Tab className={styles.tab}>
-            <p>12:00</p>
+            <p>16:00</p>
             <p>Coming soon</p>
           </Tab>
           <Tab className={styles.tab}>
-            <p>12:00</p>
+            <p>18:00</p>
             <p>Coming soon</p>
           </Tab>
           <Tab className={styles.tab}>
-            <p>12:00</p>
+            <p>20:00</p>
             <p>Coming soon</p>
           </Tab>
         </TabList>
@@ -75,7 +75,16 @@ const flashDeals = () => {
           <Sale />
         </TabPanel>
         <TabPanel>
-          <h2>Any content 2</h2>
+          <Sale />
+        </TabPanel>
+        <TabPanel>
+          <Sale />
+        </TabPanel>
+        <TabPanel>
+          <Sale />
+        </TabPanel>
+        <TabPanel>
+          <Sale />
         </TabPanel>
       </Tabs>
     </div>
