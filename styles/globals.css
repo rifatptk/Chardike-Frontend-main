@@ -1134,3 +1134,8 @@ footer a{
   clear: both;
   background-color: #fff;
 }
+
+/* flashdeals */
+.react-tabs__tab--selected{
+  background-color: tomato !important;
+}
