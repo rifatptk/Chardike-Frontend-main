@@ -3,7 +3,12 @@
   gap: 5px;
   font-weight: bold;
   cursor: pointer;
+  transition: color 0.2s ease-in;
 }
+.userNav div div:hover {
+  color: tomato;
+}
+
 .userNav .subNav {
   font-weight: 500;
   font-weight: bold;
@@ -17,4 +22,8 @@
 }
 .userNav .subNav span {
   cursor: pointer;
+  transition: color 0.2s ease-in;
+}
+.userNav .subNav span:hover {
+  color: tomato;
 }
