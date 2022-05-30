@@ -115,11 +115,10 @@ const MyAccount_profile = () => {
             />
             <input
               className={`mt-5 form-control ${styles.filepicker}`}
-              placeholder="h"
               type="file"
             />
-            <span>File size: maximum 1 MB</span>
-            <span>File extension: .JPEG, .PNG</span>
+            <small>File size: maximum 1 MB</small>
+            <small>File extension: .JPEG, .PNG</small>
           </div>
         </div>
       </div>
