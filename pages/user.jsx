@@ -5,7 +5,6 @@ import UserLeft from "../components/user/userLeft/UserLeft";
 
 const User = () => {
   const [selected, setselected] = useState("myAccount");
-  console.log(selected);
 
   return (
     <div className={`${styles.user} row`}>

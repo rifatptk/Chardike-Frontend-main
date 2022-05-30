@@ -6,9 +6,15 @@
 }
 .userNav .subNav {
   font-weight: 500;
+  font-weight: bold;
   margin-top: 5px;
+  margin-bottom: 5px;
   margin-left: 35px;
   display: flex;
   flex-direction: column;
+  gap: 5px;
   font-size: 12px;
+}
+.userNav .subNav span {
+  cursor: pointer;
 }

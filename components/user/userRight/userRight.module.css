@@ -1,0 +1,15 @@
+.myAccountForm {
+  font-size: 13px;
+}
+.myAccountForm label {
+  display: inline-block;
+}
+.myAccountForm input,
+.myAccountForm select {
+  display: inline-block;
+  font-size: 14px;
+  color: gray;
+}
+.filepicker::-webkit-file-upload-button {
+  visibility: hidden;
+}

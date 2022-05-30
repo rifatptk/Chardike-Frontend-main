@@ -47,15 +47,23 @@ const UserLeft = ({ setselected }) => {
               My Account
             </small>
           </div>
-          {myAccountExpanded && (
-            <div className={styles.subNav}>
-              <span>Profile</span>
-              <span>Banks & Cards</span>
-              <span>Addresses</span>
-              <span>Chage Password</span>
-            </div>
-          )}
         </div>
+        {myAccountExpanded && (
+          <div className={styles.subNav}>
+            <span onClick={() => setselected("myAccount_profile")}>
+              Profile
+            </span>
+            <span onClick={() => setselected("myAccount_banks")}>
+              Banks & Cards
+            </span>
+            <span onClick={() => setselected("myAccount_addresses")}>
+              Addresses
+            </span>
+            <span onClick={() => setselected("myAccount_password")}>
+              Chage Password
+            </span>
+          </div>
+        )}
         <div className="mb-2" onClick={() => setselected("myPurchase")}>
           <div>
             <HiOutlineClipboardList className="text-primary  h5 m-0" />
@@ -77,17 +85,29 @@ const UserLeft = ({ setselected }) => {
               Notification
             </small>
           </div>
-          {notificationExpanded && (
-            <div className={styles.subNav}>
-              <span>Order updates</span>
-              <span>Promotions</span>
-              <span>Wallet updates</span>
-              <span>Activities</span>
-              <span>Ratings</span>
-              <span>Chardike updates</span>
-            </div>
-          )}
         </div>
+        {notificationExpanded && (
+          <div className={styles.subNav}>
+            <span onClick={() => setselected("notification_order")}>
+              Order updates
+            </span>
+            <span onClick={() => setselected("notification_promotions")}>
+              Promotions
+            </span>
+            <span onClick={() => setselected("notification_wallet")}>
+              Wallet updates
+            </span>
+            <span onClick={() => setselected("notification_activities")}>
+              Activities
+            </span>
+            <span onClick={() => setselected("notification_ratings")}>
+              Ratings
+            </span>
+            <span onClick={() => setselected("notification_chardike")}>
+              Chardike updates
+            </span>
+          </div>
+        )}
         <div className="mb-2" onClick={() => setselected("myVouchers")}>
           <div>
             <GoCreditCard className="text-success  h5 m-0" />
