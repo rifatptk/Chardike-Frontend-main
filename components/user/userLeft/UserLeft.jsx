@@ -10,8 +10,8 @@ import { GoCreditCard } from "react-icons/go";
 import { BsCoin } from "react-icons/bs";
 
 const UserLeft = ({ setselected }) => {
-  const [myAccountExpanded, setmyAccountExpanded] = useState(false);
-  const [notificationExpanded, setnotificationExpanded] = useState(false);
+  const [myAccountExpanded, setmyAccountExpanded] = useState(true);
+  const [notificationExpanded, setnotificationExpanded] = useState(true);
 
   return (
     <div className={styles.userleft}>
