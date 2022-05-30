@@ -9,11 +9,11 @@ const User = () => {
   return (
     <div className={`${styles.user} row`}>
       {/* left */}
-      <div className="col-md-2">
+      <div className={`col-md-2 ${styles.left}`}>
         <UserLeft setselected={setselected} />
       </div>
       {/* right */}
-      <div className="col-md-10">
+      <div className={`col-md-10 ${styles.right}`}>
         <UserRight selected={selected} />
       </div>
     </div>

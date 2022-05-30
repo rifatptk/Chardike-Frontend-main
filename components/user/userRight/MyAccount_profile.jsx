@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const MyAccount_profile = () => {
   return (
-    <div className="ps-3">
+    <div className="p-3">
       <h3>My Profile</h3>
       <h6 className="mb-5">Manage and protect your account</h6>
 

@@ -1,9 +1,10 @@
 import React from "react";
 import MyAccount_profile from "./MyAccount_profile";
+import styles from "./userRight.module.css";
 
 const UserRight = ({ selected }) => {
   return (
-    <div>
+    <div className={styles.userright}>
       {selected === "myAccount" && <MyAccount_profile />}
       {selected === "myAccount_profile" && <MyAccount_profile />}
       {selected === "myAccount_banks" && <h1>Banks & Cards</h1>}

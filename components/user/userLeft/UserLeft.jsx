@@ -14,8 +14,8 @@ const UserLeft = ({ setselected }) => {
   const [notificationExpanded, setnotificationExpanded] = useState(false);
 
   return (
-    <div>
-      <div className="d-flex gap-3 align-items-start">
+    <div className={styles.userleft}>
+      <div className={`d-flex gap-3 align-items-start ${styles.header}`}>
         <Image
           className="rounded rounded-pill"
           objectFit="cover"
