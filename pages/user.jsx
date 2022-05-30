@@ -1,16 +1,24 @@
-import React from 'react'
-import UserLeft from '../components/user/userLeft/UserLeft'
-import styles from '../styles/user.module.css'
+import React, { useState } from "react";
+import UserRight from "../components/user/userRight/UserRight";
+import styles from "../styles/user.module.css";
+import UserLeft from "../components/user/userLeft/UserLeft";
 
-const user = () => {
+const User = () => {
+  const [selected, setselected] = useState("myAccount");
+  console.log(selected);
+
   return (
     <div className={`${styles.user} row`}>
+      {/* left */}
       <div className="col-md-2">
-        <UserLeft />
+        <UserLeft setselected={setselected} />
       </div>
-      <div className="col-md-10">Right</div>
+      {/* right */}
+      <div className="col-md-10">
+        <UserRight selected={selected} />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default user
+export default User;

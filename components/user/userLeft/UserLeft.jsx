@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import styles from "./userLeft.module.css";
 import user from "../../../public/image/user/user.webp";
 import { BsPencilFill } from "react-icons/bs";
@@ -9,28 +9,9 @@ import { RiNotification2Line } from "react-icons/ri";
 import { GoCreditCard } from "react-icons/go";
 import { BsCoin } from "react-icons/bs";
 
-
-const UserLeft = () => {
-  const userNav = [
-    {
-      title: "My Account",
-      icon: BiUser,
-      childrens: [
-        {
-          title: "Profile",
-        },
-        {
-          title: "Banks & Cards",
-        },
-        {
-          title: "Addresses",
-        },
-        {
-          title: "Change Password",
-        },
-      ],
-    },
-  ];
+const UserLeft = ({ setselected }) => {
+  const [myAccountExpanded, setmyAccountExpanded] = useState(false);
+  const [notificationExpanded, setnotificationExpanded] = useState(false);
 
   return (
     <div>
@@ -52,26 +33,77 @@ const UserLeft = () => {
         </div>
       </div>
       <hr />
-      <div className="userNav">
-      <ul className="list-unstyled menu-elements fw-bold">
-        <li className="mb-2">
-        <BiUser className="text-primary h5 m-0" /><small className="ms-1 scroll-link" href="#top-content"> My Account</small>
-        </li >
-        <li className="mb-2">
-        <HiOutlineClipboardList className="text-primary  h5 m-0"/> <small className="ms-1 scroll-link" href="#section-1">My Purchase</small>
-        </li>
-        <li className="mb-2">
-        <RiNotification2Line className="text-danger  h5 m-0"/> <small className="ms-1 scroll-link" href="#section-2">Notification</small>
-        </li>
-        <li className="mb-2">
-        <GoCreditCard className="text-success  h5 m-0"/> <small className="ms-1 scroll-link" href="#section-5"> My Vouchers</small>
-        </li>
-        <li className="mb-2">
-        <BsCoin className="text-warning  h5 m-0"/> <small className="ms-1 scroll-link" href="#section-5"> My Chardike Coins</small>
-        </li>
-        
-        
-    </ul>
+      <div className={styles.userNav}>
+        <div
+          className="mb-2"
+          onClick={() => {
+            setselected("myAccount");
+            setmyAccountExpanded(!myAccountExpanded);
+          }}
+        >
+          <div>
+            <BiUser className="text-primary h5 m-0" />
+            <small className="ms-1 scroll-link" href="#top-content">
+              My Account
+            </small>
+          </div>
+          {myAccountExpanded && (
+            <div className={styles.subNav}>
+              <span>Profile</span>
+              <span>Banks & Cards</span>
+              <span>Addresses</span>
+              <span>Chage Password</span>
+            </div>
+          )}
+        </div>
+        <div className="mb-2" onClick={() => setselected("myPurchase")}>
+          <div>
+            <HiOutlineClipboardList className="text-primary  h5 m-0" />
+            <small className="ms-1 scroll-link" href="#section-1">
+              My Purchase
+            </small>
+          </div>
+        </div>
+        <div
+          className="mb-2"
+          onClick={() => {
+            setselected("notification");
+            setnotificationExpanded(!notificationExpanded);
+          }}
+        >
+          <div>
+            <RiNotification2Line className="text-danger  h5 m-0" />{" "}
+            <small className="ms-1 scroll-link" href="#section-2">
+              Notification
+            </small>
+          </div>
+          {notificationExpanded && (
+            <div className={styles.subNav}>
+              <span>Order updates</span>
+              <span>Promotions</span>
+              <span>Wallet updates</span>
+              <span>Activities</span>
+              <span>Ratings</span>
+              <span>Chardike updates</span>
+            </div>
+          )}
+        </div>
+        <div className="mb-2" onClick={() => setselected("myVouchers")}>
+          <div>
+            <GoCreditCard className="text-success  h5 m-0" />
+            <small className="ms-1 scroll-link" href="#section-5">
+              My Vouchers
+            </small>
+          </div>
+        </div>
+        <div className="mb-2" onClick={() => setselected("myCoins")}>
+          <div>
+            <BsCoin className="text-warning  h5 m-0" />{" "}
+            <small className="ms-1 scroll-link" href="#section-5">
+              My Chardike Coins
+            </small>
+          </div>
+        </div>
       </div>
     </div>
   );
