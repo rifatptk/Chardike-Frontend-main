@@ -2,6 +2,7 @@
   border: 1px solid lightgray;
   border-radius: 10px;
   padding: 10px;
+  color: #444;
   /* box-shadow: 0 0 5px gray; */
 }
 .userNav {
@@ -22,15 +23,18 @@
 }
 
 .userNav .subNav {
-  font-weight: 500;
-  font-weight: bold;
+  font-weight: 400;
+  color: #888;
+  /* font-weight: bold; */
   margin-top: 5px;
   margin-bottom: 5px;
-  margin-left: 35px;
+  margin-left: 30px;
+  padding-left: 10px;
   display: flex;
   flex-direction: column;
   gap: 5px;
   font-size: 12px;
+  border-left: 1px solid lightgray;
 }
 .userNav .subNav span {
   cursor: pointer;

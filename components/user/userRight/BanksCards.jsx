@@ -8,6 +8,7 @@ const BanksCards = () => {
         <h1>QuickBuy</h1>
         <button className={styles.btnTomato}>Add Account</button>
       </div>
+      <div></div>
     </div>
   );
 };
