@@ -19,3 +19,9 @@
 .filepicker::-webkit-file-upload-button {
   visibility: hidden;
 }
+.btnTomato {
+  padding: 10px 15px;
+  border: none;
+  background-color: tomato;
+  color: white;
+}

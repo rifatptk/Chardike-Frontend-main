@@ -99,7 +99,7 @@ const MyAccount_profile = () => {
             </div>
           </div>
 
-          <button type="submit" className="btn btn-success mt-3">
+          <button type="submit" className={styles.btnTomato}>
             Save
           </button>
         </form>

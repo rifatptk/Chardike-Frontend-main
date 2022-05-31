@@ -1,4 +1,5 @@
 import React from "react";
+import BanksCards from "./BanksCards";
 import MyAccount_profile from "./MyAccount_profile";
 import styles from "./userRight.module.css";
 
@@ -7,7 +8,7 @@ const UserRight = ({ selected }) => {
     <div className={styles.userright}>
       {selected === "myAccount" && <MyAccount_profile />}
       {selected === "myAccount_profile" && <MyAccount_profile />}
-      {selected === "myAccount_banks" && <h1>Banks & Cards</h1>}
+      {selected === "myAccount_banks" && <BanksCards />}
       {selected === "myAccount_addresses" && <h1>Addresses</h1>}
       {selected === "myAccount_password" && <h1>Password</h1>}
       {selected === "myPurchase" && <h1>my purchase</h1>}
